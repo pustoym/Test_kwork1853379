@@ -1,0 +1,30 @@
+// Global
+// ---------------------------------
+
+@import "variables";
+
+// @import "mixins";
+// @import "functions";
+@import "global/fonts";
+
+// @import "global/reboot";
+// @import "global/utils";
+
+// Vendor
+// ---------------------------------
+
+// @import "vendor/normalize";
+@import "vendor/bootstrap-import";
+
+// If you need the whole bootstrap instead of modules
+// @import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Blocks
+// ---------------------------------
+
+@import "blocks/header";
+@import "blocks/main-nav";
+@import "blocks/intro";
+@import "blocks/btn";
+
+// ---------------------------------

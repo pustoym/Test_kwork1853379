@@ -1,0 +1,73 @@
+<header class="header @@if (context.mod) { header--@@mod }">
+  <div class="header__container  container">
+
+    <nav class="header__navbar navbar navbar-expand-lg navbar-dark">
+
+      <a class="header__logo-wrap" href="">
+        <img class="header__logo-img" src="@img/logo.svg" width="262" alt="Логотип «TOGOTOP»">
+      </a>
+
+      <p class="header__description">
+        Продвижение товаров на Wildberries
+      </p>
+
+      <div class="header__button-group">
+        <button type="button" class="header__btn btn btn-outline-primary">Войти</button>
+        <button type="button" class="header__btn btn btn-outline-secondary">Зарегистрироваться</button>
+      </div>
+
+        <button class="header__burger navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="header__navigation collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="main-nav navbar-nav nav nav-pills">
+            <li class="main-nav__item nav-item">
+              <a class="nav-link" href="">Как это работает</a>
+            </li>
+            <li class="main-nav__item nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                 aria-expanded="false">
+                Сервисы
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="">Сервис #1</a></li>
+                <li><a class="dropdown-item" href="">Сервис #2</a></li>
+                <li><a class="dropdown-item" href="">Сервис #3</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__item nav-item">
+              <a class="nav-link" href="">Тарифы</a>
+            </li>
+            <li class="main-nav__item nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Переезд на TOGOTOP</a>
+            </li>
+            <li class="main-nav__item nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                 aria-expanded="false">
+                Партнёрам
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="">О Сотрудничестве</a></li>
+                <li><a class="dropdown-item" href="">Интеграции</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="">Реквизиты</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__item nav-item">
+              <a class="nav-link" href="">Помощь</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+  </div>
+
+  @@include("source/html/components/intro.html",{
+  "element": "header__intro"
+  })
+
+</header>

@@ -1,0 +1,20 @@
+.main-nav {
+  @include media-breakpoint-up(lg) {
+    width: 100%;
+    padding: 9px 0;
+    border: 2px solid #404040;
+    border-radius: 20px;
+    background: #191919;
+    opacity: 0.9;
+  }
+
+  &__item {
+    line-height: 1.35em;
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+    }
+  }
+}
